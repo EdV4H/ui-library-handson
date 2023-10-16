@@ -24,26 +24,16 @@ export default defineConfig({
           stared: getPalette("honey-yellow")[70],
         },
       },
-      gradients: {
-        stateLayer: {
-          onPrimary: {
-            value: {
-              type: "linear",
-              placement: "0deg",
-              stops: ["red", "blue"],
-            },
-          },
-        },
-      },
       radii: getRadius(),
     },
     semanticTokens: {
       colors: {
         primary: { value: "{colors.primary.40}" },
         onPrimary: { value: "{colors.primary.100}" },
-        stateLayers: {
+        stateLayer: {
           onPrimary: {
-            "008": { value: "{colors.primary.40}, 0.08" },
+            "008": { value: "rgba(255, 255, 255, 0.08)" },
+            "012": { value: "rgba(255, 255, 255, 0.12)" },
           },
         },
       },

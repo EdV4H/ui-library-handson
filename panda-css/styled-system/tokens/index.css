@@ -47,7 +47,6 @@
   --colors-icon-specified-success: #00885e;
   --colors-icon-specified-error: #b3261e;
   --colors-icon-specified-stared: #e49d00;
-  --gradients-state-layer-on-primary: linear-gradient(0deg, red, blue);
   --radii-non: 0px;
   --radii-xs: 4px;
   --radii-sm: 8px;
@@ -68,7 +67,8 @@
   --sizes-breakpoint-2xl: 1536px;
   --colors-primary: var(--colors-primary-40);
   --colors-on-primary: var(--colors-primary-100);
-  --colors-state-layers-on-primary-008: var(--colors-primary-40), 0.08
+  --colors-state-layer-on-primary-008: rgba(255, 255, 255, 0.08);
+  --colors-state-layer-on-primary-012: rgba(255, 255, 255, 0.12)
 }
   }
   

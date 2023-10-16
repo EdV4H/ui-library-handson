@@ -187,10 +187,6 @@ const tokens = {
     "value": "#e49d00",
     "variable": "var(--colors-icon-specified-stared)"
   },
-  "gradients.stateLayer.onPrimary": {
-    "value": "linear-gradient(0deg, red, blue)",
-    "variable": "var(--gradients-state-layer-on-primary)"
-  },
   "radii.non": {
     "value": "0px",
     "variable": "var(--radii-non)"
@@ -271,9 +267,13 @@ const tokens = {
     "value": "var(--colors-on-primary)",
     "variable": "var(--colors-on-primary)"
   },
-  "colors.stateLayers.onPrimary.008": {
-    "value": "var(--colors-state-layers-on-primary-008)",
-    "variable": "var(--colors-state-layers-on-primary-008)"
+  "colors.stateLayer.onPrimary.008": {
+    "value": "var(--colors-state-layer-on-primary-008)",
+    "variable": "var(--colors-state-layer-on-primary-008)"
+  },
+  "colors.stateLayer.onPrimary.012": {
+    "value": "var(--colors-state-layer-on-primary-012)",
+    "variable": "var(--colors-state-layer-on-primary-012)"
   },
   "colors.colorPalette.0": {
     "value": "var(--colors-color-palette-0)",
@@ -366,6 +366,14 @@ const tokens = {
   "colors.colorPalette.008": {
     "value": "var(--colors-color-palette-008)",
     "variable": "var(--colors-color-palette-008)"
+  },
+  "colors.colorPalette.onPrimary.012": {
+    "value": "var(--colors-color-palette-on-primary-012)",
+    "variable": "var(--colors-color-palette-on-primary-012)"
+  },
+  "colors.colorPalette.012": {
+    "value": "var(--colors-color-palette-012)",
+    "variable": "var(--colors-color-palette-012)"
   }
 }
 
