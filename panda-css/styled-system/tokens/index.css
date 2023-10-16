@@ -1,0 +1,74 @@
+@layer tokens {
+    :where(:root, :host) {
+  --colors-primary-0: #000000;
+  --colors-primary-10: #00201f;
+  --colors-primary-20: #003735;
+  --colors-primary-30: #00504d;
+  --colors-primary-40: #006a67;
+  --colors-primary-50: #008581;
+  --colors-primary-60: #00a29d;
+  --colors-primary-70: #26bfba;
+  --colors-primary-80: #4edad5;
+  --colors-primary-90: #70f7f1;
+  --colors-primary-95: #b4fdfa;
+  --colors-primary-99: #f5ffff;
+  --colors-primary-100: #ffffff;
+  --colors-error-0: #000000;
+  --colors-error-10: #410e0b;
+  --colors-error-20: #601410;
+  --colors-error-30: #8c1d18;
+  --colors-error-40: #b3261e;
+  --colors-error-50: #dc362e;
+  --colors-error-60: #e46962;
+  --colors-error-70: #ec928e;
+  --colors-error-80: #f2b8b5;
+  --colors-error-90: #f9dedc;
+  --colors-error-95: #fceeee;
+  --colors-error-99: #fffbf9;
+  --colors-error-100: #ffffff;
+  --colors-neutral-0: #000000;
+  --colors-neutral-10: #1d1b20;
+  --colors-neutral-20: #322f35;
+  --colors-neutral-30: #48464c;
+  --colors-neutral-40: #605d64;
+  --colors-neutral-50: #79767d;
+  --colors-neutral-60: #938f96;
+  --colors-neutral-70: #aea9b1;
+  --colors-neutral-80: #cac5cd;
+  --colors-neutral-87: #e6e0e9;
+  --colors-neutral-90: #e7e1ea;
+  --colors-neutral-92: #ece6ef;
+  --colors-neutral-94: #f2ebf4;
+  --colors-neutral-95: #f5eff7;
+  --colors-neutral-96: #f8f1f9;
+  --colors-neutral-98: #fef6fd;
+  --colors-neutral-99: #fffbfe;
+  --colors-neutral-100: #ffffff;
+  --colors-icon-specified-success: #00885e;
+  --colors-icon-specified-error: #b3261e;
+  --colors-icon-specified-stared: #e49d00;
+  --gradients-state-layer-on-primary: linear-gradient(0deg, red, blue);
+  --radii-non: 0px;
+  --radii-xs: 4px;
+  --radii-sm: 8px;
+  --radii-md: 12px;
+  --radii-lg: 16px;
+  --radii-xl: 24px;
+  --radii-full: 999px;
+  --radii-2xl: 28px;
+  --breakpoints-sm: 640px;
+  --breakpoints-md: 768px;
+  --breakpoints-lg: 1024px;
+  --breakpoints-xl: 1280px;
+  --breakpoints-2xl: 1536px;
+  --sizes-breakpoint-sm: 640px;
+  --sizes-breakpoint-md: 768px;
+  --sizes-breakpoint-lg: 1024px;
+  --sizes-breakpoint-xl: 1280px;
+  --sizes-breakpoint-2xl: 1536px;
+  --colors-primary: var(--colors-primary-40);
+  --colors-on-primary: var(--colors-primary-100);
+  --colors-state-layers-on-primary-008: var(--colors-primary-40), 0.08
+}
+  }
+  
