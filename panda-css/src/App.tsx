@@ -1,28 +1,27 @@
 import { useState } from "react";
-import { OutlinedButton } from "./components/Button/OutlinedButton";
-import { TextButton } from "./components/Button/TextButton";
-import { FilledButton } from "./components/Button/FilledButton";
+import { Button } from "./components/Button";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [variant, setVariant] = useState<"filled" | "outlined" | "text">(
+    "filled"
+  );
+  const [disabled, setDisabled] = useState(false);
 
   return (
     <>
-      <FilledButton onClick={() => setCount(count + 1)}>
+      <Button
+        variant={variant}
+        disabled={disabled}
+        onClick={() => setCount(count + 1)}
+      >
         count is {count}
-      </FilledButton>
-      <FilledButton icon={<p>👋</p>} onClick={() => setCount(count + 1)}>
-        count is {count}
-      </FilledButton>
-      <FilledButton disabled>Disabled</FilledButton>
-      <OutlinedButton onClick={() => setCount(count + 1)}>
-        count is {count}
-      </OutlinedButton>
-      <OutlinedButton disabled>Disabled</OutlinedButton>
-      <TextButton onClick={() => setCount(count + 1)}>
-        count is {count}
-      </TextButton>
-      <TextButton disabled>Disabled</TextButton>
+      </Button>
+      <button onClick={() => setVariant("filled")}>filled</button>
+      <button onClick={() => setVariant("outlined")}>outlined</button>
+      <button onClick={() => setVariant("text")}>text</button>
+      <button onClick={() => setDisabled(!disabled)}>toggle disabled</button>
+      <button onClick={() => setCount(0)}>reset</button>
     </>
   );
 }
