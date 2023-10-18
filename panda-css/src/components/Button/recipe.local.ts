@@ -10,6 +10,22 @@ export const button = cva({
     paddingY: "10px",
     borderRadius: "full",
     cursor: "pointer",
+    _hover: {
+      _before: {
+        position: "absolute",
+        inset: 0,
+        content: '""',
+        borderRadius: "inherit",
+      },
+    },
+    _active: {
+      _before: {
+        position: "absolute",
+        inset: 0,
+        content: '""',
+        borderRadius: "inherit",
+      },
+    },
   },
   variants: {
     variant: {
@@ -22,16 +38,10 @@ export const button = cva({
           _active: "none",
         },
         _hover: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.onPrimary.008",
-          },
+          _before: { bg: "stateLayer.onPrimary.008" },
         },
         _active: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.onPrimary.012",
-          },
+          _before: { bg: "stateLayer.onPrimary.012" },
         },
       },
       outlined: {
@@ -39,31 +49,19 @@ export const button = cva({
         outlineColor: "outline",
         color: "primary",
         _hover: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.primary.008",
-          },
+          _before: { bg: "stateLayer.primary.008" },
         },
         _active: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.primary.012",
-          },
+          _before: { bg: "stateLayer.primary.012" },
         },
       },
       text: {
         color: "primary",
         _hover: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.primary.008",
-          },
+          _before: { bg: "stateLayer.primary.008" },
         },
         _active: {
-          _before: {
-            ...stateLayerBase,
-            bg: "stateLayer.primary.012",
-          },
+          _before: { bg: "stateLayer.primary.012" },
         },
       },
     },

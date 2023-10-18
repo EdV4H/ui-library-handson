@@ -39,6 +39,8 @@ export default defineConfig({
         primary: { value: "{colors.primary.40}" },
         onPrimary: { value: "{colors.primary.100}" },
         outline: { value: "{colors.neutral.50}" },
+        outlineVariant: { value: "{colors.neutral.80}" },
+        surfaceVariant: { value: "{colors.neutral.30}" },
         stateLayer: {
           primary: {
             "008": { value: "rgba(0, 106, 103, 0.08)" },
