@@ -22,6 +22,14 @@ function App() {
         >
           count is {count}
         </Button>
+        <Button
+          variant={variant}
+          disabled={disabled}
+          onClick={() => setCount(count + 1)}
+          css={{ backgroundColor: "red" }}
+        >
+          count is {count}
+        </Button>
         <button onClick={() => setVariant("filled")}>filled</button>
         <button onClick={() => setVariant("outlined")}>outlined</button>
         <button onClick={() => setVariant("text")}>text</button>

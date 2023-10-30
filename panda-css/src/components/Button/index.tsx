@@ -1,3 +1,5 @@
+import { css, cx } from "../../../styled-system/css";
+import { SystemStyleObject } from "../../../styled-system/types";
 import { button } from "./recipe.local";
 
 type ButtonProps = {
@@ -6,12 +8,16 @@ type ButtonProps = {
   icon?: React.ReactNode;
   children?: React.ReactNode;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  css?: SystemStyleObject;
 };
 
 export const Button: React.FC<ButtonProps> = (props) => {
-  const { icon, children, variant, disabled, onClick } = props;
+  const { icon, children, variant, disabled, onClick, css: cssProps } = props;
   return (
-    <button className={button({ variant, disabled })} onClick={onClick}>
+    <button
+      className={cx(button({ variant, disabled }), css(cssProps))}
+      onClick={onClick}
+    >
       {icon}
       {children}
     </button>
