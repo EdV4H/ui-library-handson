@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { Checkbox } from "./components/Checkbox";
 import { Divider } from "./components/Divider";
 import { css } from "../styled-system/css";
+import { RadioGroup } from "@ark-ui/react";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -41,6 +42,11 @@ function App() {
       <div>
         <Checkbox checked={checked} onChange={setChecked} disabled={disabled} />
       </div>
+
+      <Divider inset="md" />
+
+      <RadioGroup />
+
       <Divider>end</Divider>
     </>
   );

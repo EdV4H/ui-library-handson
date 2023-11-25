@@ -1,5 +1,4 @@
 import { cva } from "../../../styled-system/css";
-import { stateLayerBase } from "./constants.local";
 
 export const button = cva({
   base: {

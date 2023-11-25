@@ -1,5 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
-import { getPalette, getRadius } from "./figma/utils";
+import { getPalette, getRadius, getTextStyles } from "./figma/utils";
 
 export default defineConfig({
   // Whether to use css reset
@@ -58,7 +58,9 @@ export default defineConfig({
         },
       },
     },
-    extend: {},
+    extend: {
+      textStyles: getTextStyles(),
+    },
   },
 
   // The output directory for your css system
